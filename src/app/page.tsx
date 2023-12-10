@@ -30,7 +30,7 @@ export default function Home() {
             <section className="bg-gray-500 w-full negative-margin">
                 <div className="m-auto w-2/3 py-24 standard-height">
                     <div className="h-full w-full flex items-center justify-center flex-col gap-20">
-                        <h1 className="text-4xl text-white font-bold">We're getting married</h1>
+                        <h1 className="text-4xl text-white font-bold">We&apos;re getting married</h1>
                         <div className="custom-container">
                             <div className="inside-container">
                                 <div className="container-content flex">
