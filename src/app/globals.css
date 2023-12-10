@@ -3,25 +3,86 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+    --offset: 2px;
+    --border-size: 1px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
 }
+
+.full-height {
+    height: 100vh;
+}
+
+.slanded-section{
+    transform: skewY(-5deg); /* Ajustez l'inclinaison selon vos besoins */
+    background-color: white; /* Couleur de fond de la section */
+    color: #ffffff;
+    z-index: 1000;
+}
+
+.skw{
+    transform: skewY(5deg);
+}
+
+.content-height{
+    height: 500px;
+}
+
+.image-height{
+    height: 600px;
+    z-index: 1000;
+    position: absolute;
+    right: 0;
+}
+
+.negative-margin{
+    margin-top: -90px;
+}
+
+.standard-height{
+    height: 900px;
+}
+
+.custom-container{
+    width: 850px;
+    height: 500px;
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inside-container{
+   height: 550px;
+    width: 810px;
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-content{
+    height: 500px;
+    width: 810px;
+    overflow: hidden;
+}
+
+
+.transparent-color{
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.top-border{
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+.card{
+    height: 800px;
+    width: 500px;
+    bottom: -250px;
+}
+
+
