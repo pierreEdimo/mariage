@@ -85,8 +85,63 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
-                <div className=" m-auto shadow-2xl p-2 bg-white card z-10 absolute transform -translate-x-1/2  h-96 left-1/2">
-                    <p>test</p>
+                <div className=" m-auto shadow-2xl p-6 bg-white card z-10 absolute flex items-center justify-center transform -translate-x-1/2  left-1/2">
+                    <div className="card-container">
+                        <div className="card-container-inside">
+                            <form className="card-container-content">
+                                <div className="mb-8">
+                                    <p className="text-5xl font-bold">Will you attend?</p>
+                                </div>
+                                <div className="flex flex-col gap-4 w-full">
+                                    <input type="text" placeholder="Your Name:*"/>
+                                    <input type="email" placeholder="Your Email:*"/>
+                                    <div className="flex justify-between">
+                                        <label>
+                                            <input type="radio" name="attendance"/>
+                                            Yes, i will attend
+                                        </label>
+                                        <label>
+                                            <input type="radio" name="attendance"/>
+                                            Sorry, I can&apos;t come.
+                                        </label>
+                                    </div>
+                                    <select>
+                                        <option value="" disabled selected>Number of guests</option>
+                                        <option value="0">0</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                    </select>
+                                    <div>
+                                        <p>Meal Preferences</p>
+                                        <div className="flex flex-col">
+                                            <label>
+                                                <input type={"checkbox"}/>
+                                                Meat
+                                            </label>
+                                            <label>
+                                                <input type={"checkbox"}/>
+                                                Fish
+                                            </label>
+                                            <label>
+                                                <input type={"checkbox"}/>
+                                                Vegetarian
+                                            </label>
+                                            <label>
+                                                <input type={"checkbox"}/>
+                                                Gluten free
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <textarea rows={6} placeholder={"Message"}></textarea>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </section>
             <section className="slanded-section negative-margin bg-white standard-height">

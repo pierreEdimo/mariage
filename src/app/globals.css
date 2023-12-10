@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -9,43 +11,46 @@
 
 
 body {
+    font-family: 'Poppins', sans-serif;
 }
 
 .full-height {
     height: 100vh;
 }
 
-.slanded-section{
+.slanded-section {
     transform: skewY(-5deg); /* Ajustez l'inclinaison selon vos besoins */
     background-color: white; /* Couleur de fond de la section */
     color: #ffffff;
     z-index: 1000;
 }
 
-.skw{
+.skw {
     transform: skewY(5deg);
 }
 
-.content-height{
+.content-height {
     height: 500px;
 }
 
-.image-height{
+.image-height {
     height: 600px;
     z-index: 1000;
     position: absolute;
     right: 0;
 }
 
-.negative-margin{
+.negative-margin {
     margin-top: -90px;
 }
 
-.standard-height{
-    height: 900px;
+.standard-height {
+    height: 1300px;
 }
 
-.custom-container{
+
+
+.custom-container {
     width: 850px;
     height: 500px;
     border: 1px solid white;
@@ -54,8 +59,8 @@ body {
     justify-content: center;
 }
 
-.inside-container{
-   height: 550px;
+.inside-container {
+    height: 550px;
     width: 810px;
     border: 1px solid white;
     display: flex;
@@ -63,26 +68,86 @@ body {
     justify-content: center;
 }
 
-.container-content{
+.container-content {
     height: 500px;
     width: 810px;
     overflow: hidden;
 }
 
 
-.transparent-color{
+.card-container {
+    height: calc(100% - 40px);
+    width: 100%;
+    border: 1px solid #d3d3d3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.card-container-inside {
+    height: calc(100% + 40px);
+    width: calc(100% - 40px);
+    border: 1px solid #d3d3d3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-container-content {
+    height: calc(100% - 40px);
+    width: calc(100% + 40px);
+    background: transparent;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 50px 20px 50px;
+}
+
+.transparent-color {
     background: rgba(0, 0, 0, 0.5);
 }
 
-.top-border{
+.top-border {
     border-top: 1px solid white;
     border-bottom: 1px solid white;
 }
 
-.card{
-    height: 800px;
-    width: 500px;
+.card {
+    width: 600px;
     bottom: -250px;
+    height: 950px;
 }
 
+
+input {
+    padding: 15px 10px;
+    border: 1px solid #d3d3d3;
+}
+
+input:focus {
+    outline: none;
+}
+
+select {
+    padding: 15px 10px;
+    background: white;
+    border: 1px solid #d3d3d3;
+}
+
+select:disabled {
+
+    color: #f3f3f3;
+
+}
+
+textarea {
+    padding: 15px 10px;
+    border: 1px solid #d3d3d3;
+}
+
+textarea:focus {
+    outline: none;
+}
 
