@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import {AppBar} from "@/app/shared/appbar";
 
 export default function Home() {
