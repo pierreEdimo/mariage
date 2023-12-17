@@ -1,0 +1,17 @@
+.buttonContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+    width: 220px;
+    height: 50px;
+}
+
+.buttonInsideContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+    width: 210px;
+    height: 60px;
+}

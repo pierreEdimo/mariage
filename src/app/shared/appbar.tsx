@@ -11,8 +11,8 @@ export const AppBar: React.FC = () => {
                         Logo
                     </div>
                     <div className="gap-8 flex">
-                        <a>HOME</a>
-                        <a>THE WEDDING</a>
+                        <a>ACCUEIL</a>
+                        <a>LE MARIAGE</a>
                         <a>REGISTRY</a>
                         <a>RSVP</a>
                     </div>
