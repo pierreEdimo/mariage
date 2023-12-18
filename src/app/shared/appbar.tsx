@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 
 
@@ -11,10 +12,10 @@ export const AppBar: React.FC = () => {
                         Logo
                     </div>
                     <div className="gap-8 flex">
-                        <a>ACCUEIL</a>
-                        <a>LE MARIAGE</a>
-                        <a>REGISTRY</a>
-                        <a>RSVP</a>
+                        <Link href={"/"}>Accueil</Link>
+                        <Link href={"/ceremony"}>Le mariage</Link>
+                        <Link href={"/registry"}>Inscription</Link>
+                        <Link href={"/rsvp"}>rsvp</Link>
                     </div>
                 </div>
             </div>
