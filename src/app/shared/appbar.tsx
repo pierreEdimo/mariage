@@ -11,7 +11,7 @@ export const AppBar: React.FC = () => {
                     <div>
                         Logo
                     </div>
-                    <div className="gap-8 flex">
+                    <div className="gap-8 flex uppercase">
                         <Link href={"/"}>Accueil</Link>
                         <Link href={"/ceremony"}>Le mariage</Link>
                         <Link href={"/registry"}>Inscription</Link>
