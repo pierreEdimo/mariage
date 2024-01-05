@@ -110,7 +110,7 @@ export default function Home() {
                     </div>
                 </div>
                 <div
-                    className=" m-auto shadow-2xl p-6 bg-white card z-10 absolute flex items-center justify-center transform -translate-x-1/2  left-1/2">
+                    className="m-auto shadow-2xl p-6 bg-white card z-10 absolute flex items-center justify-center transform -translate-x-1/2  left-1/2">
                     <div className="card-container">
                         <div className="card-container-inside">
                             <form className="card-container-content">

@@ -1,9 +1,13 @@
 import React from "react";
 
 
-export const Footer: React.FC = () => {
+export type Props = {
+    backgroundColor?: string
+}
+
+export const Footer: React.FC<Props> = ({backgroundColor}) => {
     return (
-        <footer className={"w-full p-8"}>
+        <footer style={{backgroundColor: backgroundColor ? backgroundColor : 'white'}} className={"w-full p-8"}>
             <div className={"text-center mb-8"}>
                 <h2 className={"text-2xl font-bold"}>Liens Rapides</h2>
             </div>

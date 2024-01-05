@@ -24,8 +24,9 @@ const Details: NextPage = () => {
                     <Title text={"Les Details"}/>
                 </div>
             </section>
-            <section style={{height: "600px"}} className={"w-full  bg-blue-800"}>
-
+            <section style={{height: "400px"}} className={"w-full  bg-blue-800"}>
+                <div className="m-auto">
+                </div>
             </section>
             <Footer/>
         </main>
