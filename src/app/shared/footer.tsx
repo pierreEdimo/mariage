@@ -7,7 +7,8 @@ export type Props = {
 
 export const Footer: React.FC<Props> = ({backgroundColor}) => {
     return (
-        <footer style={{backgroundColor: backgroundColor ? backgroundColor : 'white'}} className={"w-full p-8"}>
+        <footer style={{backgroundColor: backgroundColor ? backgroundColor : 'white'}}
+                className={"w-full h-full p-8 flex items-center flex-col justify-center"}>
             <div className={"text-center mb-8"}>
                 <h2 className={"text-2xl font-bold"}>Liens Rapides</h2>
             </div>

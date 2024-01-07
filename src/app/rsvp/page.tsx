@@ -5,11 +5,12 @@ import {Footer} from "@/app/shared/footer";
 import {Title} from "@/app/shared/title";
 import flower from "@/app/images/flower.jpg";
 import {Button} from "@/app/shared/button";
+import gravur2 from "@/app/images/gravur.jpg";
 
 
 const RSVP: NextPage = () => {
     return (
-        <main style={{backgroundColor: "#fffcfc"}} className={"relative"}>
+        <main className={"relative"}>
             <AppBar/>
             <section style={{height: "400px", top: "-85px"}}
                      className={"w-full slanded-section relative overflow-hidden"}>
@@ -25,25 +26,30 @@ const RSVP: NextPage = () => {
                     <Title text={"RSVP"}/>
                 </div>
             </section>
-            <section  className={"w-full py-24"}>
-                <div className={"w-2/3 m-auto flex gap-2"}>
-                    <div className={"w-1/2"}>
+            <section style={{
+                backgroundImage: `url(${gravur2.src})`,
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                top: "-125px"
+            }} className={"w-full relative py-24"}>
+                <div style={{backgroundColor: 'rgba(250,240,230,0.5)', top: "-125px", height: "calc(100% + 125px)"}}
+                     className={"absolute w-full"}></div>
+                <div className={"w-2/3 m-auto flex items-center gap-2"}>
+                    <div style={{zIndex: "10"}} className={"w-1/2"}>
                         <h1 className={"font-bold text-4xl mb-8"}>Nous allons nous marier !</h1>
                         <div className={"flex flex-col text-xl gap-2"}>
-                            <p>Phasellus a sapien tincidunt nunc dapibus mollis. Etiam ultricies bibendum sodales. Nulla
-                                libero tortor, auctor at elit ut, pharetra placerat libero. Aenean gravida in libero sed
-                                tincidunt. Nulla non mattis nisl, in imperdiet justo. Proin metus mauris, gravida vel
-                                ante
-                                et, ornare laoreet libero sed ut quam vitae. Aenean aliquam augue turpis, in tempor elit
-                                condimentum sit amet.
-                            </p>
-
                             <p>
-                                Aenean aliquam augue turpis, in tempor elit condimentum sit amet. Phasellus a sapien
-                                tincidunt nunc dapibus mollis. Etiam ultricies bibendum sodales. Nulla libero tortor,
-                                auctor
-                                at elit ut, pharetra placerat libero. Aenean gravida in libero sed tincidunt. Nulla non
-                                mattis nisl, in imperdiet justo.</p>
+                                Assurément décrété dans les cieux avant que nos mères nous eussent conçu, rien sauf Dieu
+                                ne l&apos;aurait empêché.
+
+                                Le temps lui même à attendu avec impatience ce jour, qui est la.
+
+                                Notre mariage marquera en réalité le triomphe de l&apos;union de notre amour indomptable et
+                                de l&apos;amour inconditionnel du Seigneur Jesus pour nous.
+
+                                Waouhhh!, une toute nouvelle vie pour s&apos;aimer passionnément et pour L&apos;aimer avec
+                                reverance.
+                            </p>
                         </div>
                         <hr className={"my-20"}/>
                         <div className={"w-80 m-auto italic text-xl"}>
@@ -59,7 +65,7 @@ const RSVP: NextPage = () => {
                         </div>
                     </div>
                     <div className={"w-1/2 ml-16"}>
-                    <div
+                        <div
                             className="shadow-2xl p-6 bg-white card z-10  flex items-center justify-center transform">
                             <div className="card-container">
                                 <div className="card-container-inside">
@@ -126,7 +132,11 @@ const RSVP: NextPage = () => {
                     </div>
                 </div>
             </section>
-            <Footer/>
+            <div style={{top: "-125px"}} className={"relative "}>
+                <div className={"absolute w-full mt-10"} style={{height: "calc(200px + 125px)"}}>
+                    <Footer/>
+                </div>
+            </div>
         </main>
     )
 }
