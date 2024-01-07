@@ -15,7 +15,6 @@ export const Footer: React.FC<Props> = ({backgroundColor}) => {
             <div className={"w-2/3 m-auto flex items-center justify-center flex-col gap-4"}>
                 <a>Notre Histoire</a>
                 <a>Les Details du Mariage</a>
-                <a>Enregistrement des Cadeaux</a>
                 <a>RSVP</a>
             </div>
         </footer>
