@@ -18,7 +18,7 @@ export default function Home() {
             </section>
             <section className="slanded-section negative-margin">
                 <div className="content-height m-auto w-2/3 flex items-center  skw">
-                    <div className="w-1/2 text-black">
+                    <div style={{width: "40%"}} className=" text-black ml-10">
                         <p className="text-2xl font-bold">Il a fait sa demande et elle a dit oui !!</p>
                         <br/>
                         <p>Assurément décrété dans les cieux avant que nos mères nous eussent conçu, rien sauf Dieu ne
@@ -32,7 +32,7 @@ export default function Home() {
                             Waouhhh!, une toute nouvelle vie pour s&apos;aimer passionnément et pour L&apos;aimer avec
                             reverance.</p>
                     </div>
-                    <div style={{width: "500px"}} className="image-height negative-margin bg-white p-8">
+                    <div style={{width: "40%"}} className="image-height  negative-margin bg-white p-8">
                         <Image objectFit={"cover"} style={{height: "100%", width: "100%"}} src={foto1}
                                alt={'Franklin & Vanessa'}/>
                     </div>
