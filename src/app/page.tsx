@@ -7,6 +7,7 @@ import flowerImage from "@/app/images/flower-mariage.jpg";
 import React from "react";
 import {Button} from "@/app/shared/button";
 import gravur from "@/app/images/gravur.jpg";
+import {MessageBanner} from "@/app/shared/messageBanner";
 
 export default function Home() {
     return (
@@ -17,26 +18,7 @@ export default function Home() {
                        alt={"Franklin & Vanessa"}/>
             </section>
             <section className="slanded-section negative-margin">
-                <div className="content-height m-auto w-2/3 flex items-center  skw">
-                    <div style={{width: "40%"}} className=" text-black ml-10">
-                        <p className="text-2xl font-bold">Il a fait sa demande et elle a dit oui !!</p>
-                        <br/>
-                        <p>Assurément décrété dans les cieux avant que nos mères nous eussent conçu, rien sauf Dieu ne
-                            l&apos;aurait empêché.
-
-                            Le temps lui même à attendu avec impatience ce jour, qui est la.
-
-                            Notre mariage marquera en réalité le triomphe de l&apos;union de notre amour indomptable et
-                            de l&apos;amour inconditionnel du Seigneur Jesus pour nous.
-
-                            Waouhhh!, une toute nouvelle vie pour s&apos;aimer passionnément et pour L&apos;aimer avec
-                            reverance.</p>
-                    </div>
-                    <div style={{width: "40%"}} className="image-height  negative-margin bg-white p-8">
-                        <Image objectFit={"cover"} style={{height: "100%", width: "100%"}} src={foto1}
-                               alt={'Franklin & Vanessa'}/>
-                    </div>
-                </div>
+                <MessageBanner additionalClassName={"skw"}/>
             </section>
             <section  style={{top: "-90px", zIndex: "-10"}}
                      className={"w-full standard-height bg-white relative overflow-hidden"}>

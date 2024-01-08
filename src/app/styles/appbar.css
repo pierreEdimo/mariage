@@ -1,0 +1,11 @@
+@media screen and (max-width: 991px) {
+    .desktop-bar{
+        display: none;
+    }
+}
+
+ @media screen and (min-width: 992px) {
+     .mobile-bar{
+         display: none;
+     }
+ }

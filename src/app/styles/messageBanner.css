@@ -1,0 +1,16 @@
+@media screen and (max-width: 991px) {
+    #desktopBanner{
+        display: none;
+    }
+
+    #mobileBanner{
+        height: 550px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #mobileBanner{
+        display: none;
+    }
+}
+
