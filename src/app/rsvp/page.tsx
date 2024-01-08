@@ -34,37 +34,12 @@ const RSVP: NextPage = () => {
             }} className={"w-full relative py-24"}>
                 <div style={{backgroundColor: 'rgba(250,240,230,0.5)', top: "-125px", height: "calc(100% + 125px)"}}
                      className={"absolute w-full"}></div>
-                <div className={"w-2/3 m-auto flex items-center gap-2"}>
-                    <div style={{zIndex: "10"}} className={"w-1/2"}>
-                        <h1 className={"font-bold text-4xl mb-8"}>Nous allons nous marier !</h1>
-                        <div className={"flex flex-col text-xl gap-2"}>
-                            <p>
-                                Assurément décrété dans les cieux avant que nos mères nous eussent conçu, rien sauf Dieu
-                                ne l&apos;aurait empêché.
-
-                                Le temps lui même à attendu avec impatience ce jour, qui est la.
-
-                                Notre mariage marquera en réalité le triomphe de l&apos;union de notre amour indomptable et
-                                de l&apos;amour inconditionnel du Seigneur Jesus pour nous.
-
-                                Waouhhh!, une toute nouvelle vie pour s&apos;aimer passionnément et pour L&apos;aimer avec
-                                reverance.
-                            </p>
-                        </div>
-                        <hr className={"my-20"}/>
-                        <div className={"w-80 m-auto italic text-xl"}>
-                            <p className={"text-center"}>
-                                Veuillez confirmer votre présence
-                                au plus tard le 24 juillet
-                            </p>
-                        </div>
-                        <hr className={"my-20"}/>
-                        <div className={"text-center m-auto"}>
-                            <p>Telephone: <a>+49 178 00000</a></p>
-                            <p>E-mail: <a>test@yahoo.fr</a></p>
-                        </div>
+                <div className={"w-2/3 m-auto flex items-center justify-center flex-col gap-2"}>
+                    <div style={{zIndex: "10"}} className={"text-center"}>
+                        <p className={"font-bold text-2xl mb-5"}>Nous sommes ravis de célébrer avec vous !</p>
+                        <p style={{letterSpacing: "1.5px"}} className={"uppercase mb-5"}>Veuillez répondre avant le 01 Avril 2024.</p>
                     </div>
-                    <div className={"w-1/2 ml-16"}>
+                    <div>
                         <div
                             className="shadow-2xl p-6 bg-white card z-10  flex items-center justify-center transform">
                             <div className="card-container">

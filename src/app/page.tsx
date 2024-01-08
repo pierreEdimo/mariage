@@ -55,26 +55,8 @@ export default function Home() {
                                             <p className="text-xl">La</p>
                                             <p className="font-bold text-6xl">Date</p>
                                         </div>
-                                        <div
-                                            className="flex-1 transparent-color flex items-center flex-col justify-center top-border gap-12 text-white">
-                                            <div className="flex flex-col gap-2 p-2">
-                                                <p className="text-center"><span
-                                                    className="font-bold text-3xl">Franklin</span> & <span
-                                                    className="font-bold text-3xl">Vanessa</span></p>
-                                                <p className="text-center">demandent l&apos;honneur de votre présence à
-                                                    leur
-                                                    cérémonie de mariage
-                                                </p>
-                                            </div>
-                                            <div className="text-center">
-                                                <p className="font-bold text-2xl">September 22, 2022</p>
-                                                <p>at 03:00 pm</p>
-                                            </div>
-                                            <div className="text-center">
-                                                <p>At Birchwood Church</p>
-                                                <p>4181 Birchwood Ave Seal Beach, CA</p>
-                                                <p>Reception to follow</p>
-                                            </div>
+                                        <div className="flex-1 transparent-color flex items-center flex-col justify-center top-border gap-12 text-white">
+
                                         </div>
                                     </div>
                                 </div>

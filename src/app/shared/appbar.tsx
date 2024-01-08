@@ -11,7 +11,7 @@ export const AppBar: React.FC = () => {
                     <div className={"signature text-2xl"}>
                         Franklin & Vanessa
                     </div>
-                    <div className="gap-8 flex uppercase">
+                    <div style={{letterSpacing: "1.5px"}} className="gap-8 flex uppercase">
                         <Link href={"/"}>Accueil</Link>
                         <Link href={"/ceremony"}>Le mariage</Link>
                         <Link href={"/rsvp"}>rsvp</Link>

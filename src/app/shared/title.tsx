@@ -6,7 +6,7 @@ type titleProps = {
 
 export const Title: React.FC<titleProps> = ({text}) => {
     return (
-        <h1 className={"text-center text-4xl font-bold"}>
+        <h1 className={"pageTitle text-center text-4xl"}>
             {text}
         </h1>
     )

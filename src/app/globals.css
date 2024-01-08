@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -58,6 +59,14 @@ header{
 
 .standard-height {
     height: 1300px;
+}
+
+.pageTitle{
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: white;
 }
 
 
