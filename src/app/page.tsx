@@ -13,14 +13,16 @@ export default function Home() {
     return (
         <main className="relative">
             <AppBar/>
-            <section className="full-height w-full bg-gray-500">
-                <Image objectFit={"cover"} style={{width: "100%", height: "auto"}} src={fond}
-                       alt={"Franklin & Vanessa"}/>
-            </section>
+            <section style={{
+                backgroundImage: `url(${fond.src})`,
+                backgroundSize: 'cover',
+                backgroundRepeat: 'no-repeat',
+                backgroundPosition: 'center'
+            }} className="full-height w-full"></section>
             <section className="slanded-section negative-margin">
                 <MessageBanner additionalClassName={"skw"}/>
             </section>
-            <section  style={{top: "-90px", zIndex: "-10"}}
+            <section style={{top: "-90px", zIndex: "-10"}}
                      className={"w-full standard-height bg-white relative overflow-hidden"}>
                 <div style={{backgroundColor: "rgba(67, 64, 64, 0.7)",}} className={"w-full h-full absolute"}></div>
                 <div style={{backgroundImage: `url(${flowerImage.src})`, backgroundSize: "cover"}}
@@ -37,7 +39,8 @@ export default function Home() {
                                             <p className="text-xl">La</p>
                                             <p className="font-bold text-6xl">Date</p>
                                         </div>
-                                        <div className="flex-1 transparent-color flex items-center flex-col justify-center top-border gap-12 text-white">
+                                        <div
+                                            className="flex-1 transparent-color flex items-center flex-col justify-center top-border gap-12 text-white">
 
                                         </div>
                                     </div>
@@ -47,8 +50,11 @@ export default function Home() {
                     </div>
                 </div>
             </section>
-            <section style={{backgroundImage:`url(${gravur.src})`,  top: "-90px", height: "800px", backgroundSize: 'cover'}} className="py-24 w-full standard-height relative">
-                <div style={{backgroundColor: "rgba(250,240,230,0.5)", top: "0"}} className={"h-full w-full absolute"}></div>
+            <section
+                style={{backgroundImage: `url(${gravur.src})`, top: "-90px", height: "800px", backgroundSize: 'cover'}}
+                className="py-24 w-full standard-height relative">
+                <div style={{backgroundColor: "rgba(250,240,230,0.5)", top: "0"}}
+                     className={"h-full w-full absolute"}></div>
                 <div
                     className="m-auto shadow-2xl p-6 bg-white card z-10 absolute flex items-center justify-center transform -translate-x-1/2  left-1/2">
                     <div className="card-container">
