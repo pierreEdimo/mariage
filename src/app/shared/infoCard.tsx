@@ -20,10 +20,9 @@ export const InfoCard = () => {
                     </div>
                 </div>
             </div>
-            <div className={"mobile mobile-custom-container border flex items-center justify-center"}>
+            <div id={"mobile-info"} className={"mobile mobile-custom-container border flex items-center justify-center"}>
                 <div style={{width: 'calc(100% - 40px)'}}
-                     className={"border flex items-center justify-center" +
-                         " mobile-inside-container"}>
+                     className={"border flex items-center justify-center mobile-inside-container"}>
                     <div className="mobile-container-content flex">
                         <div
                             className="flex-1 flex items-center flex-col justify-center bg-transparent text-white">

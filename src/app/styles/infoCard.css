@@ -1,31 +1,31 @@
-.border{
+.border {
     border: 1px solid white;
 }
 
 @media screen and (max-width: 991px) {
-    .desktop{
+    .desktop {
         display: none;
     }
 
-    .mobile-custom-container{
+    .mobile-custom-container {
         border: 1px solid white;
         height: 500px;
         width: 91.67vw;
     }
 
-    .mobile-inside-container{
+    .mobile-inside-container {
         height: 550px;
     }
 
-    .mobile-container-content{
+    .mobile-container-content {
         height: 500px;
         width: 100%;
-        overflow:hidden;
+        overflow: hidden;
     }
 }
 
-@media screen and (min-width: 992px){
-    .mobile{
+@media screen and (min-width: 992px) {
+    .mobile {
         display: none;
     }
 
@@ -44,5 +44,20 @@
         width: 810px;
         overflow: hidden;
     }
+}
 
+@media screen and (max-width: 767px){
+    .mobile-container-content{
+        flex-direction: column;
+        height: 800px;
+    }
+
+    .mobile-custom-container{
+        height: 800px;
+    }
+
+
+    .mobile-inside-container {
+        height: 840px;
+    }
 }
