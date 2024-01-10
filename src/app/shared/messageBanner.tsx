@@ -11,7 +11,7 @@ export const MessageBanner: React.FC<Props> = ({additionalClassName}) => {
     return (
         <div>
             <div id={"desktopBanner"} style={{height: "550px"}}
-                 className={`m-auto w-2/3 relative flex items-center ${additionalClassName}`}>
+                 className={`m-auto w-2/3 relative flex items-center justify-between ${additionalClassName}`}>
                 <div className="w-1/2 text-black">
                     <p className="text-2xl font-bold">Il a fait sa demande et elle a dit oui !!</p>
                     <br/>
@@ -28,7 +28,7 @@ export const MessageBanner: React.FC<Props> = ({additionalClassName}) => {
                         reverance.
                     </p>
                 </div>
-                <div style={{width: "40%"}} className="image-height bg-white p-8">
+                <div className="image-height image-banner bg-white p-8">
                     <div style={{
                         backgroundImage: `url(${foto1.src})`,
                         backgroundSize: 'cover',
@@ -39,8 +39,9 @@ export const MessageBanner: React.FC<Props> = ({additionalClassName}) => {
                     }}></div>
                 </div>
             </div>
-            <div id={"mobileBanner"} className={`m-auto w-11/12 relative flex items-center ${additionalClassName}`}>
-                <div className="w-1/2 text-black">
+            <div id={"mobileBanner"}
+                 className={`m-auto w-11/12 relative flex items-center justify-between ${additionalClassName}`}>
+                <div id={"mobileBanner-col-1"} className="w-1/2 text-black">
                     <p className="text-2xl font-bold">Il a fait sa demande et elle a dit oui !!</p>
                     <br/>
                     <p>
@@ -56,9 +57,15 @@ export const MessageBanner: React.FC<Props> = ({additionalClassName}) => {
                         reverance.
                     </p>
                 </div>
-                <div style={{width: "40%"}} className="image-height  bg-white p-8">
-                    <Image objectFit={"cover"} style={{height: "100%", width: "100%"}} src={foto1}
-                           alt={'Franklin & Vanessa'}/>
+                <div id={"mobileBanner-col-2"}  className="image-height image-banner  bg-white p-8">
+                    <div style={{
+                        backgroundImage: `url(${foto1.src})`,
+                        backgroundSize: 'cover',
+                        width: '100%',
+                        height: '100%',
+                        backgroundRepeat: 'no-repeat',
+                        backgroundPosition: 'center'
+                    }}></div>
                 </div>
             </div>
         </div>

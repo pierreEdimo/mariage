@@ -49,8 +49,6 @@ header{
 .image-height {
     height: 650px;
     z-index: 1000;
-    position: absolute;
-    right: 0;
 }
 
 .negative-margin {

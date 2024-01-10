@@ -12,5 +12,30 @@
     #mobileBanner{
         display: none;
     }
+
+    .image-banner{
+        width: 40%;
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+    #mobileBanner{
+        height: auto;
+        padding-top: 50px;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    #mobileBanner-col-1{
+        width: 100%;
+    }
+
+    #mobileBanner-col-2{
+        width: 100%;
+        padding: 52px;
+    }
+
+
 }
 
