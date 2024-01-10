@@ -1,5 +1,6 @@
 import * as React from 'react';
 import {Button} from "@/app/shared/button";
+import '@/app/styles/formular.css'
 
 export const Formular = () => {
     return (
