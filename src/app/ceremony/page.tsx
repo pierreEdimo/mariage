@@ -5,8 +5,6 @@ import {Footer} from "@/app/shared/footer";
 import {Title} from "@/app/shared/title";
 import flower from "@/app/images/flower.jpg";
 import {Button} from "@/app/shared/button";
-import Image from "next/image";
-import foto1 from "@/app/images/foto1.jpg";
 import gravur from "@/app/images/gravur.jpg";
 import golden from "@/app/images/golden-flower.png";
 import {MessageBanner} from "@/app/shared/messageBanner";
@@ -32,7 +30,7 @@ const Ceremony: NextPage = () => {
             <section style={{height: "600px", top: "-125px", zIndex: "-100"}} className={"w-full  relative "}>
                 <div style={{backgroundImage: `url(${golden.src})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat', height: "calc(100% + 125px)"}} className={"absolute w-full"}></div>
                 <div className="m-auto w-2/3 h-full flex flex-col relative items-center justify-center pt-24 gap-9">
-                    <h1 className={"text-8xl font-bold"}>Franklin & Vanessa</h1>
+                    <h1 className={"text-6xl text-center font-bold"}>Franklin & Vanessa</h1>
                     <h2 className={"italic text-xl"}>24 August 2024</h2>
                 </div>
             </section>
@@ -42,7 +40,7 @@ const Ceremony: NextPage = () => {
             <section className={"relative"} style={{backgroundImage: `url(${gravur.src})`, height: "550px", backgroundSize: 'cover'}}>
                 <div style={{backgroundColor: 'rgba(250,240,230,0.5)'}} className={"absolute w-full h-full"}></div>
                 <div className={"h-full w-2/3 m-auto flex items-center justify-center flex-col gap-12"}>
-                    <h1 style={{zIndex: "10"}} className={"text-4xl font-bold"}>Serez vous present?</h1>
+                    <h1 style={{zIndex: "10"}} className={"text-4xl text-center font-bold"}>Serez vous present?</h1>
                     <div style={{zIndex: "10"}} className={"w-96 text-xl text-center"}>
                         <p>Veuillez confirmer votre présence
                             au plus tard le 24 juillet.</p>

@@ -36,12 +36,10 @@ export default function Home() {
                 </div>
             </section>
             <section
-                style={{backgroundImage: `url(${gravur.src})`, top: "-90px", height: "800px", backgroundSize: 'cover'}}
-                className="py-24 w-full standard-height relative">
-                <div style={{backgroundColor: "rgba(250,240,230,0.5)", top: "0"}}
-                     className={"h-full w-full absolute"}></div>
-                <div
-                    className="m-auto shadow-2xl p-6 bg-white card z-10 absolute flex items-center justify-center transform -translate-x-1/2  left-1/2">
+                style={{backgroundImage: `url(${gravur.src})`, top: "-90px", height: "800px", backgroundSize: 'cover'}} className="py-24 w-full standard-height relative">
+                <div style={{backgroundColor: "rgba(250,240,230,0.5)", top: "0"}} className={"h-full w-full absolute"}></div>
+
+                <div className="m-auto shadow-2xl p-6 bg-white card z-10 absolute flex items-center justify-center transform -translate-x-1/2  left-1/2">
                     <Formular/>
                 </div>
             </section>

@@ -120,4 +120,10 @@ textarea:focus {
 }
 
 
+@media screen and (max-width: 767px) {
+    .card{
+        width: 91.67vw;
+    }
+}
+
 
