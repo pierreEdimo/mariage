@@ -6,6 +6,7 @@ import {Title} from "@/app/shared/title";
 import flower from "@/app/images/flower.jpg";
 import {Button} from "@/app/shared/button";
 import gravur2 from "@/app/images/gravur.jpg";
+import {Formular} from "@/app/shared/formular";
 
 
 const RSVP: NextPage = () => {
@@ -42,67 +43,7 @@ const RSVP: NextPage = () => {
                     <div>
                         <div
                             className="shadow-2xl p-6 bg-white card z-10  flex items-center justify-center transform">
-                            <div className="card-container">
-                                <div className="card-container-inside">
-                                    <form className="card-container-content">
-                                        <div className="mb-8">
-                                            <p className="text-4xl font-bold">Serez-vous présent ?</p>
-                                        </div>
-                                        <div className="flex flex-col gap-4 w-full">
-                                            <input type="text" placeholder="Votre Nom:*"/>
-                                            <input type="email" placeholder="Votre E-mail:*"/>
-                                            <div className="flex justify-between">
-                                                <label>
-                                                    <input type="radio" name="attendance"/>
-                                                    Oui, je serai présent
-                                                </label>
-                                                <label>
-                                                    <input type="radio" name="attendance"/>
-                                                    Désolé, je ne peux pas.
-                                                </label>
-                                            </div>
-                                            <select>
-                                                <option value="" disabled selected>Nombre d&apos;invités</option>
-                                                <option value="0">0</option>
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                                <option value="5">5</option>
-                                                <option value="6">6</option>
-                                                <option value="7">7</option>
-                                            </select>
-                                            <div>
-                                                <p>Meal Preferences</p>
-                                                <div className="flex flex-col">
-                                                    <label>
-                                                        <input type={"checkbox"}/>
-                                                        Viande
-                                                    </label>
-                                                    <label>
-                                                        <input type={"checkbox"}/>
-                                                        Poisson
-                                                    </label>
-                                                    <label>
-                                                        <input type={"checkbox"}/>
-                                                        Végétarien
-                                                    </label>
-                                                    <label>
-                                                        <input type={"checkbox"}/>
-                                                        Sans Gluten
-                                                    </label>
-                                                </div>
-                                            </div>
-                                            <textarea rows={6} placeholder={"Message"}></textarea>
-                                        </div>
-                                        <div className={"mt-10"}>
-                                            <Button borderColor={"#d3d3d3"}>
-                                                Envoyer
-                                            </Button>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
+                            <Formular/>
                         </div>
                     </div>
                 </div>

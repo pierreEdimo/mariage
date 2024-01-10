@@ -1,0 +1,48 @@
+.border{
+    border: 1px solid white;
+}
+
+@media screen and (max-width: 991px) {
+    .desktop{
+        display: none;
+    }
+
+    .mobile-custom-container{
+        border: 1px solid white;
+        height: 500px;
+        width: 91.67vw;
+    }
+
+    .mobile-inside-container{
+        height: 550px;
+    }
+
+    .mobile-container-content{
+        height: 500px;
+        width: 100%;
+        overflow:hidden;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .mobile{
+        display: none;
+    }
+
+    .custom-container {
+        width: 850px;
+        height: 500px;
+    }
+
+    .inside-container {
+        height: 550px;
+        width: 810px;
+    }
+
+    .container-content {
+        height: 500px;
+        width: 810px;
+        overflow: hidden;
+    }
+
+}

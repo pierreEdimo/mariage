@@ -69,32 +69,6 @@ header{
     color: white;
 }
 
-
-.custom-container {
-    width: 850px;
-    height: 500px;
-    border: 1px solid white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.inside-container {
-    height: 550px;
-    width: 810px;
-    border: 1px solid white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.container-content {
-    height: 500px;
-    width: 810px;
-    overflow: hidden;
-}
-
-
 .card-container {
     height: calc(100% - 40px);
     width: 100%;
