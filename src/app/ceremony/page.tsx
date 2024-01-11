@@ -8,6 +8,7 @@ import {Button} from "@/app/shared/button";
 import gravur from "@/app/images/gravur.jpg";
 import golden from "@/app/images/golden-flower.png";
 import {MessageBanner} from "@/app/shared/messageBanner";
+import Link from "next/link";
 
 const Ceremony: NextPage = () => {
     return (
@@ -41,14 +42,16 @@ const Ceremony: NextPage = () => {
                 <div style={{backgroundColor: 'rgba(250,240,230,0.5)'}} className={"absolute w-full h-full"}></div>
                 <div className={"h-full w-2/3 m-auto flex items-center justify-center flex-col gap-12"}>
                     <h1 style={{zIndex: "10"}} className={"text-4xl text-center font-bold"}>Serez vous present?</h1>
-                    <div style={{zIndex: "10"}} className={"w-96 text-xl text-center"}>
+                    <div style={{zIndex: "10"}} className={"text-width text-center"}>
                         <p>Veuillez confirmer votre présence
                             au plus tard le 24 juillet.</p>
                     </div>
                     <div style={{zIndex: "10"}}>
-                        <Button borderColor={"gray"}>
-                            RSVP
-                        </Button>
+                        <Link href={"/rsvp"}>
+                            <Button borderColor={"gray"}>
+                                RSVP
+                            </Button>
+                        </Link>
                     </div>
                 </div>
             </section>

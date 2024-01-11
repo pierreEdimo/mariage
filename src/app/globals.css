@@ -46,6 +46,10 @@ header{
     height: 550px;
 }
 
+.text-width{
+   width: 380px;
+}
+
 .image-height {
     height: 650px;
     z-index: 1000;
@@ -122,6 +126,10 @@ textarea:focus {
 
 @media screen and (max-width: 767px) {
     .card{
+        width: 91.67vw;
+    }
+
+    .text-width{
         width: 91.67vw;
     }
 }
