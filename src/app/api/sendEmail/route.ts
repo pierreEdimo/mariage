@@ -23,16 +23,16 @@ export async function POST(request: Request) {
 
         auth: {
 
-            user: "pierredimo@live.com",
+            user: "mariagefranklinvanessa@outlook.de",
             pass: "28Janvier1995?"
         }
     });
 
     try {
         await transporter.sendMail({
-            from: "pierredimo@live.com",
+            from: "mariagefranklinvanessa@outlook.de",
             to: "timena.franklin@yahoo.de",
-            subject: "test",
+            subject: "invitation au mariage",
             html: `
             <p>Name: ${requestBody.text.name} </p>
             <p>Email: ${requestBody.text.email} </p>
