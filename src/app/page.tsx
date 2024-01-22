@@ -3,7 +3,6 @@ import {Footer} from "@/app/shared/footer";
 import fond from "@/app/images/fond.jpg";
 import flowerImage from "@/app/images/flower-mariage.jpg";
 import React from "react";
-import {Button} from "@/app/shared/button";
 import gravur from "@/app/images/gravur.jpg";
 import {MessageBanner} from "@/app/shared/messageBanner";
 import {InfoCard} from "@/app/shared/infoCard";
