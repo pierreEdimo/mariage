@@ -1,5 +1,5 @@
 import { NextResponse, NextRequest } from 'next/server'
-const nodemailer = require('nodemailer');
+import nodemailer from 'nodemailer';
 
 // Handles POST requests to /api
 
@@ -29,7 +29,6 @@ export async function POST(request: Request) {
     });
 
     try {
-
         await transporter.sendMail({
             from: "pierredimo@live.com",
             to: "timena.franklin@yahoo.de",
@@ -47,6 +46,4 @@ export async function POST(request: Request) {
     } catch (error) {
         NextResponse.json({ message: "COULD NOT SEND MESSAGE" })
     }
-
-
 }
