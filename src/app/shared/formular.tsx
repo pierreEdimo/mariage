@@ -38,9 +38,12 @@ export const Formular = () => {
                 },
                 body: JSON.stringify({text: data}),
             });
+            window.location.reload();
         } catch (error) {
             console.error('Error sending email:', error);
         }
+
+
 
     }
 

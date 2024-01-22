@@ -32,19 +32,30 @@ const Ceremony: NextPage = () => {
                 <div style={{backgroundImage: `url(${golden.src})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat', height: "calc(100% + 125px)"}} className={"absolute w-full"}></div>
                 <div className="m-auto w-2/3 h-full flex flex-col relative items-center justify-center pt-24 gap-9">
                     <h1 className={"text-6xl text-center font-bold"}>Franklin & Vanessa</h1>
-                    <h2 className={"italic text-xl"}>24 August 2024</h2>
+                    <div className={"text-center"}>
+                        <h2 className={"italic text-xl"}>Le 17 Mai 2024</h2>
+                        <p>12h30</p>
+                        <p>a l&apos;Ambassade du Cameroun</p>
+                        <p className={"font-bold"}>Ulmenallee 32, 14050 Berlin</p>
+                    </div>
+                    <div className={"text-center"}>
+                        <h2 className={"italic text-xl"}>Le 18 Mai 2024</h2>
+                        <p>13h00</p>
+                        <p className={"font-bold"}>Mühlenstraße 5, 36137 Grossenlüder</p>
+                    </div>
                 </div>
             </section>
             <section className={"w-full bg-gray-100"}>
                 <MessageBanner/>
             </section>
-            <section className={"relative"} style={{backgroundImage: `url(${gravur.src})`, height: "550px", backgroundSize: 'cover'}}>
+            <section className={"relative"}
+                     style={{backgroundImage: `url(${gravur.src})`, height: "550px", backgroundSize: 'cover'}}>
                 <div style={{backgroundColor: 'rgba(250,240,230,0.5)'}} className={"absolute w-full h-full"}></div>
                 <div className={"h-full w-2/3 m-auto flex items-center justify-center flex-col gap-12"}>
                     <h1 style={{zIndex: "10"}} className={"text-4xl text-center font-bold"}>Serez vous present?</h1>
                     <div style={{zIndex: "10"}} className={"text-width text-center"}>
                         <p>Veuillez confirmer votre présence
-                            au plus tard le 24 juillet.</p>
+                            au plus tard le 01 Avril 2024.</p>
                     </div>
                     <div style={{zIndex: "10"}}>
                         <Link href={"/rsvp"}>
